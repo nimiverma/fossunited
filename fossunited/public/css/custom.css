@@ -236,20 +236,6 @@ a:hover {
   color: inherit;
 }
 
-button {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  gap: 0.5em;
-  border-radius: 0.5rem;
-  border: 1px solid hsl(var(--clr-open-gray-100));
-  font-size: var(--text-base);
-  padding: 0.625rem 0.75rem;
-  cursor: pointer;
-  background: none;
-  transition: background 0.1s ease-in-out;
-}
-
 button:hover {
   background: hsl(var(--clr-open-gray-50));
 }
@@ -3914,4 +3900,13 @@ a.hover-underline:hover {
 .v3-bg-primary {
   background: var(--v3-main-bg);
   color: var(--v3-text-color);
+}
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+  z-index: 1000;
 }
